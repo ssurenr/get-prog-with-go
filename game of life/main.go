@@ -50,3 +50,48 @@ func (u Universe) Seed() {
 		}
 	}
 }
+
+func (u Universe) Alive(x, y int) bool {
+	x = (x + height) % height
+	y = (y + width) % width
+	return u[x][y]
+}
+
+func (u Universe) Neighbours(x, y int) int {
+	neighbours := 0
+	for h := x - 1; h <= x + 1 ; h++  {
+		for w := y - 1; w <= y + 1; w++ {
+			if h == x && w == y {
+				continue
+			} else {
+				if u.Alive(h,w) {
+					neighbours += 1
+				}
+			}
+		}
+	}
+	fmt.Println(neighbours)
+	return neighbours
+}
+
+func (u Universe) Next(x,y int) bool {
+	neighbours := u.Neighbours(x,y)
+	alive := false
+
+	if u.Alive(x, y) {
+		switch neighbours {
+		case 0, 1:
+			alive = false
+		case 2, 3:
+			alive = true
+		default:
+			alive = false
+		}
+	} else {
+		if neighbours == 3 {
+			alive = true
+		}
+	}
+
+	return alive
+}
