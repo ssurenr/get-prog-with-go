@@ -2,3 +2,5 @@ say-hello:
   image: ubuntu
   script:
     - echo "Welcome to basic pipeline"
+  tags:
+    - cm-official-docker-executor
