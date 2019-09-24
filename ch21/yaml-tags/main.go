@@ -8,7 +8,7 @@ import (
 
 func main() {
 	type location struct {
-		Lat float64 `yaml:"latitude"`
+		Lat  float64 `yaml:"latitude"`
 		Long float64 `yaml:"longitude"`
 	}
 
@@ -25,6 +25,3 @@ func exitOnError(err error) {
 		os.Exit(1)
 	}
 }
-
-
-

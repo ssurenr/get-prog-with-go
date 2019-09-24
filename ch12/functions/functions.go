@@ -9,7 +9,7 @@ func kelvinToCelsius(k float64) float64 {
 }
 
 func celsiusToFarenheit(c float64) float64 {
-	f := (c*9.0/5.0)+32
+	f := (c * 9.0 / 5.0) + 32
 	return f
 }
 
@@ -22,5 +22,5 @@ func kelvinToFarenheit(k float64) float64 {
 func main() {
 	kelvin := 0.0
 	farenheit := kelvinToFarenheit(kelvin)
-	fmt.Println(kelvin,"° K is ",farenheit, "° F")
+	fmt.Println(kelvin, "° K is ", farenheit, "° F")
 }

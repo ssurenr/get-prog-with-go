@@ -13,7 +13,7 @@ func main() {
 	message = strings.ToUpper(strings.Replace(message, " ", "", -1))
 	keyword = strings.ToUpper(strings.Replace(keyword, " ", "", -1))
 
-	for i :=0; i < len(message); i++ {
+	for i := 0; i < len(message); i++ {
 		c := message[i]
 
 		if c >= 'A' && c <= 'Z' {

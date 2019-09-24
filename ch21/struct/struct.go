@@ -3,8 +3,8 @@ package main
 import "fmt"
 
 func main() {
-	var curiosity struct{
-		lat float64
+	var curiosity struct {
+		lat  float64
 		long float64
 	}
 
