@@ -25,7 +25,7 @@ jobs:
         fi
 
     - name: Go Format check
-      run: gtest -z $(go fmt ./...)
+      run: test -z $(go fmt ./...)
 
     - name: Build
       run: |
