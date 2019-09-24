@@ -26,4 +26,4 @@ jobs:
 
     - name: Build
       run: |
-        go build -v game\ of\ life
+        go build -v ./game\ of\ life
