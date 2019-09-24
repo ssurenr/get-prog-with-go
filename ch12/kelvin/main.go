@@ -13,6 +13,6 @@ func main() {
 	kelvin2 := 233.0
 	celsius := kelvinToCelsius(kelvin)
 	celsius2 := kelvinToCelsius(kelvin2)
-	fmt.Println(kelvin,"° K is ",celsius, "° C")
-	fmt.Println(kelvin2,"° K is ",celsius2, "° C")
+	fmt.Println(kelvin, "° K is ", celsius, "° C")
+	fmt.Println(kelvin2, "° K is ", celsius2, "° C")
 }

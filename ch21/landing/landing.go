@@ -9,7 +9,7 @@ import (
 func main() {
 	type location struct {
 		Name string
-		Lat float64 `json:"latitude"`
+		Lat  float64 `json:"latitude"`
 		Long float64 `json:"longitude"`
 	}
 
@@ -19,7 +19,7 @@ func main() {
 		{Name: "Challenger Memorial Station", Lat: -1.9462, Long: 354.4734},
 	}
 
-	bytes,err := json.MarshalIndent(locations,"","\t")
+	bytes, err := json.MarshalIndent(locations, "", "\t")
 	exitOnError(err)
 	fmt.Println(string(bytes))
 }

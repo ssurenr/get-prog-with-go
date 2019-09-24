@@ -22,7 +22,7 @@ func main() {
 	giants := planets[4:8]
 	gas := giants[0:2]
 	ice := giants[2:4]
-	fmt.Println(giants,gas,ice)
+	fmt.Println(giants, gas, ice)
 
 	iceGiantsMarkII := iceGiants
 	iceGiants[1] = "Poseidon"
@@ -45,5 +45,5 @@ func main() {
 	dwarfArray := [...]string{"Ceres", "Pluto", "Haumea", "Makemake", "Eris"}
 	dwarfSlice := dwarfArray[:]
 
-	fmt.Printf("DwarfArray: %T, DwarfSlice: %T",dwarfArray,dwarfSlice)
+	fmt.Printf("DwarfArray: %T, DwarfSlice: %T", dwarfArray, dwarfSlice)
 }

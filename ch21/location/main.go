@@ -6,7 +6,7 @@ import (
 
 func main() {
 	type location struct {
-		lat float64
+		lat  float64
 		long float64
 	}
 
@@ -16,7 +16,7 @@ func main() {
 
 	var oppurtunity location
 	oppurtunity.lat = -1.9462
-	oppurtunity.long  =354.4734
+	oppurtunity.long = 354.4734
 
 	fmt.Println(spirit, oppurtunity)
 }

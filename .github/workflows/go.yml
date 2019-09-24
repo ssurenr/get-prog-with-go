@@ -24,6 +24,9 @@ jobs:
             dep ensure
         fi
 
+    - name: Go Format check
+      run: test -z $(go fmt ./...)
+
     - name: Build
       run: |
-        go build -v game\ of\ life
+        go build -v ./game\ of\ life

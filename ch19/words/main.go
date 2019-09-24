@@ -5,7 +5,6 @@ import (
 	"strings"
 )
 
-
 // countWords takes a text and count the occurrence of each word in the text. It returns a map of words and their
 // number of occurrences.
 func countWords(text string) map[string]int {

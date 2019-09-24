@@ -6,7 +6,7 @@ import (
 )
 
 const (
-	width = 80
+	width  = 80
 	height = 15
 )
 
@@ -43,7 +43,7 @@ func (u Universe) Show() {
 
 func (u Universe) Seed() {
 	for h := range u {
-		for w:= range u[h] {
+		for w := range u[h] {
 			if rand.Intn(3) == 0 {
 				u[h][w] = true
 			}
@@ -59,12 +59,12 @@ func (u Universe) Alive(x, y int) bool {
 
 func (u Universe) Neighbours(x, y int) int {
 	neighbours := 0
-	for h := x - 1; h <= x + 1 ; h++  {
-		for w := y - 1; w <= y + 1; w++ {
+	for h := x - 1; h <= x+1; h++ {
+		for w := y - 1; w <= y+1; w++ {
 			if h == x && w == y {
 				continue
 			} else {
-				if u.Alive(h,w) {
+				if u.Alive(h, w) {
 					neighbours += 1
 				}
 			}
@@ -74,8 +74,8 @@ func (u Universe) Neighbours(x, y int) int {
 	return neighbours
 }
 
-func (u Universe) Next(x,y int) bool {
-	neighbours := u.Neighbours(x,y)
+func (u Universe) Next(x, y int) bool {
+	neighbours := u.Neighbours(x, y)
 	alive := false
 
 	if u.Alive(x, y) {

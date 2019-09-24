@@ -18,7 +18,7 @@ func measureTemperature(samples int, sensor func() kelvin) {
 }
 
 func fakeSensor() kelvin {
-	return kelvin(rand.Intn(151)+150)
+	return kelvin(rand.Intn(151) + 150)
 }
 
 func main() {
