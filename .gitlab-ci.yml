@@ -4,3 +4,6 @@ say-hello:
     - echo "Welcome to basic pipeline"
   tags:
     - cm-official-docker-executor
+
+stages:
+  - say-hello
