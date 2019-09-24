@@ -30,5 +30,3 @@ func main() {
 	fmt.Println(planets)
 	fmt.Println(planetsMarkII)
 }
-
-

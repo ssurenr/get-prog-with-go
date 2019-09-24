@@ -19,7 +19,7 @@ func main() {
 		c = (c-k+26)%26 + 'A'
 		message += string(c)
 
-		}
+	}
 
 	fmt.Println(message)
 }

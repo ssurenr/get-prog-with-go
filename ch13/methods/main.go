@@ -7,7 +7,7 @@ type farenheit float64
 type kelvin float64
 
 func (c celsius) farenheit() farenheit {
-	return farenheit(c * 9/5 + 32)
+	return farenheit(c*9/5 + 32)
 }
 
 func (c celsius) kelvin() kelvin {
@@ -15,19 +15,19 @@ func (c celsius) kelvin() kelvin {
 }
 
 func (f farenheit) celsius() celsius {
-	return celsius((f - 32)/1.8)
+	return celsius((f - 32) / 1.8)
 }
 
 func (f farenheit) kelvin() kelvin {
-	return kelvin((f + 459.67)*5/9)
+	return kelvin((f + 459.67) * 5 / 9)
 }
 
-func (k kelvin) celsius() celsius  {
+func (k kelvin) celsius() celsius {
 	return celsius(k - 273.15)
 }
 
 func (k kelvin) farenheit() farenheit {
-	return farenheit((k + 459.67) * 5/9)
+	return farenheit((k + 459.67) * 5 / 9)
 }
 
 func main() {

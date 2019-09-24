@@ -2,7 +2,7 @@ package main
 
 import "fmt"
 
-func main () {
+func main() {
 	twoWorlds := terraform("New", "Venus", "Mercury")
 	fmt.Println(twoWorlds)
 

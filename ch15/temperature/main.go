@@ -7,7 +7,7 @@ type temperature float64
 func drawTable(convert func(temperature) temperature, column1 string, column2 string) {
 	// Header
 	fmt.Println("===================")
-	fmt.Printf("|     °%v |     °%v |\n",column1, column2)
+	fmt.Printf("|     °%v |     °%v |\n", column1, column2)
 	fmt.Println("===================")
 
 	// Data
@@ -21,11 +21,11 @@ func drawTable(convert func(temperature) temperature, column1 string, column2 st
 }
 
 func celsiusToFarenheit(celsius temperature) temperature {
-	return celsius * 9/5 + 32
+	return celsius*9/5 + 32
 }
 
 func farenheitToCelsius(farenheit temperature) temperature {
-	return (farenheit - 32)*5/9
+	return (farenheit - 32) * 5 / 9
 }
 
 func main() {

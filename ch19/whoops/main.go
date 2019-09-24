@@ -10,6 +10,6 @@ func main() {
 	planets["Earth"] = "whoops"
 	fmt.Println(planets)
 	fmt.Println(planetsMarkII)
-	delete(planets,"Earth")
+	delete(planets, "Earth")
 	fmt.Println(planetsMarkII)
 }

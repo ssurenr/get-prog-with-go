@@ -12,7 +12,6 @@ func main() {
 
 	distance := 62100000 //km
 
-
 	for count := 0; count < 10; count++ {
 		airline := ""
 		duration := 0
@@ -29,7 +28,7 @@ func main() {
 			airline = "Virgin Galactic"
 		}
 
-		speed := rand.Intn(30 - 16 + 1) + 16 // km/s
+		speed := rand.Intn(30-16+1) + 16 // km/s
 		duration = distance / speed / secondsPerDay
 
 		price = 20.0 + speed
