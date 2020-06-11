@@ -104,13 +104,13 @@ func main() {
 	parisLocation := newLocation(coordinate{48, 51, 0, 'N'}, coordinate{2, 21, 0, 'E'})
 	displayDistance(earth, "London", "Paris", londonLocation, parisLocation)
 
-	myCityLocation := newLocation(coordinate{51,87,0,'N'},coordinate{0,15,0,'E'})
+	myCityLocation := newLocation(coordinate{51, 87, 0, 'N'}, coordinate{0, 15, 0, 'E'})
 	myCapitalLocation := londonLocation
-	displayDistance(earth,"My City","My Capital",myCityLocation,myCapitalLocation)
+	displayDistance(earth, "My City", "My Capital", myCityLocation, myCapitalLocation)
 
-	mountSharpLocation := newLocation(coordinate{5,4,48,'S'},coordinate{137,51,0,'E'})
-	olympusMonsLocation := newLocation(coordinate{18,39,0,'N'},coordinate{226,12,0,'E'})
-	displayDistance(mars,"Mount Sharp","Olympus Mons",mountSharpLocation,olympusMonsLocation)
+	mountSharpLocation := newLocation(coordinate{5, 4, 48, 'S'}, coordinate{137, 51, 0, 'E'})
+	olympusMonsLocation := newLocation(coordinate{18, 39, 0, 'N'}, coordinate{226, 12, 0, 'E'})
+	displayDistance(mars, "Mount Sharp", "Olympus Mons", mountSharpLocation, olympusMonsLocation)
 
 }
 
