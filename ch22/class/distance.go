@@ -116,5 +116,5 @@ func main() {
 
 func displayDistance(w world, s1name string, s2name string, site1 location, site2 location) {
 	content := fmt.Sprintf("Distance between %s and %s:", s1name, s2name)
-	fmt.Printf("%-45s %.4f\n", content, w.distance(site1, site2))
+	fmt.Printf("%-50s %.4f\n", content, w.distance(site1, site2))
 }
